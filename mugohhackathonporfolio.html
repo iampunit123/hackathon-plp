@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Punit Mugoh, a creative media consultant specialized in graphic design, public relations, marketing, and digital & mainstream media."/>
+  <title>Punit Mugoh | Media Consultant</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000000, #111111);
+      color: white;
+      line-height: 1.6;
+    }
+
+    section {
+      animation: fadeUp 1s ease-out both;
+    }
+
+    section:not(:first-of-type) {
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header + Navigation */
+    header {
+      background: transparent;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    .logo {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: auto;
+    }
+
+    .icon {
+      font-size: 2rem;
+      animation: spin 4s linear infinite;
+    }
+
+    .name {
+      font-size: 1.5rem;
+      color: #3eb8ff;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #eee;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #3eb8ff;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Shared Section Styles */
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #3eb8ff;
+    }
+
+    .section p, .section li {
+      max-width: 700px;
+      margin: 0 auto 1rem auto;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+      max-width: 200px;
+      margin: 0 auto 2rem;
+      border: 3px solid #3eb8ff;
+      border-radius: 12px;
+      animation: floatIn 2s ease-out;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3eb8ff; 
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #5548d9;
+}
+    /* Skills Section */
+    .skills-section {
+      padding: 4rem 2rem;
+      background: #111;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      color: #3eb8ff;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .skill {
+      max-width: 600px;
+      margin: 1.5rem auto;
+      text-align: left;
+    }
+
+    .skill label {
+      font-size: 1.1rem;
+      color: #d1ecff;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill progress {
+      width: 100%;
+      height: 20px;
+      appearance: none;
+      background-color: #333;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .skill progress::-webkit-progress-bar {
+      background-color: #333;
+      border-radius: 10px;
+    }
+
+    .skill progress::-webkit-progress-value {
+      background: linear-gradient(to right, #3eb8ff, #0d8dc8);
+      border-radius: 10px;
+      transition: width 2s ease-out;
+    }
+
+    .skill progress::-moz-progress-bar {
+      background: linear-gradient(to right, #3eb8ff, #0d8dc8);
+      border-radius: 10px;
+    }
+
+    /* Contact */
+    .contact-section {
+      padding: 4rem 2rem;
+      background: linear-gradient(to top, #111, #000);
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      color: #3eb8ff;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      background: #3eb8ff;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #1398d6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #ccc;
+      font-size: 0.9rem;
+      background: linear-gradient(to top, #000, transparent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <a href="#home" class="logo">
+        <span class="icon">🎨
+            
+        </span>
+        <span class="name">Punit Mugoh</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <figure class="profile-pic">
+      <img src="punit.jpg" alt="Punit Mugoh" />
+    </figure>
+    <p>
+      I'm a creative and inventive media consultant, passionate about <strong>graphic design</strong>, <strong>public relations</strong>, <strong>marketing</strong>, and <strong>digital & mainstream media</strong>. I love listening to music, coding, and hiking.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Educational Background</h2>
+    <p> I studied at Moi university, Eldoret ,kenya and attained </p>.
+    <p>A Bachelor’s Degree arts  in FILM AND MEDIA </p>
+    <p>My degree involves and revolves around media and communication as the most important aspects in my skill dockets</p>
+        <a href="https://drive.google.com/file/d/1_rRbqSYv2hcCi1why2FNGl-dgh4WcmRu/view?usp=sharing" download class="download-btn">Download My CV</a>
+        
+  </section>
+
+  <!-- Interests -->
+  <section id="interests" class="section">
+    <h2>My Interests</h2>
+    <p>I’m passionate about technology, creativity, and problem-solving. I love designing, storytelling, and building visual experiences that communicate powerfully.</p>
+    <p>What excites me most is combining media and code to impact people and brands through unique digital experiences.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills-section">
+    <h2>My Skills</h2>
+    <article class="skill"><label>Film and TV directing</label><progress value="100" max="100"></progress></article>
+    <article class="skill"><label>Graphic Design</label><progress value="90" max="100"></progress></article>
+    <article class="skill"><label>Public Relations</label><progress value="85" max="100"></progress></article>
+    <article class="skill"><label>Marketing</label><progress value="80" max="100"></progress></article>
+    <article class="skill"><label>Content Strategy</label><progress value="75" max="100"></progress></article>
+    <article class="skill"><label>webdesign</label><progress value="70" max="100"></progress></article>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages" class="section">
+    <h2>Programming Languages</h2>
+    <p> I am currently learning software engineering at PLP Academy .
+       Over the short period i have been able to learn the following; </p>
+    <ul>
+      <li>Python ( programing Language )</li>
+      <li>HTML5 (Markup language)</li>
+      <li> mysql ( datbase )</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="skills-section">
+    <h2>My Projects</h2>
+    <article class="skill"><label>🎬 The Road</label><p>A thought-provoking film currently in production, exploring personal journeys and identity.</p></article>
+    <article class="skill"><label>📢 Vibez & Rafiki Advert</label><p>Developing a dynamic commercial for the Vibez and Rafiki brands, combining visual storytelling with marketing flair.</p></article>
+    <article class="skill"><label>💻 Tours & Travel Website</label><p>Designing and coding a vibrant website for a growing travel agency — showcasing destinations, booking, and blog features.</p></article>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Punit Mugoh. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
